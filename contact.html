@@ -1,124 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>Starter Template - Materialize</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <script src="js/portfolio.js"></script>
 </head>
+
 <body>
-<<<<<<< HEAD
   <!-- NAV -->
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Aaron Moskowitz</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-              <li><a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">LinkedIn</a></li>
-              <li><a href="https://github.com/Moskowitza">Github</a></li>
-              <li><a href="https://moskowitza.github.com/portfolio">Portfolio</a></li>
-              <li><a href="https://moskowitza.github.com/aaron">contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    
-      <ul class="sidenav" id="mobile-demo">
-          <li><a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">LinkedIn</a></li>
-          <li><a href="https://github.com/Moskowitza">Github</a></li>
-          <li><a href="https://moskowitza.github.com/portfolio">Portfolio</a></li>
-          <li><a href="https://moskowitza.github.com/aaron">Contact</a></li>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo hide-on-small-only">Aaron Moskowitz</a>
+      <a href="#!" class="brand-logo show-on-small hide-on-med-and-up">Aaron M.</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/Moskowitza">Github</a>
+        </li>
+        <li>
+          <a href="https://moskowitza.github.com/portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="https://moskowitza.github.com/aaron">Contact</a>
+        </li>
       </ul>
+    </div>
+
   <!-- NAV -->
-  <!-- portfolio -->
-  
-<!-- Game Div -->
+
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">LinkedIn</a>
+    </li>
+    <li>
+      <a href="https://github.com/Moskowitza">Github</a>
+    </li>
+    <li>
+      <a href="https://moskowitza.github.com/portfolio">Portfolio</a>
+    </li>
+    <li>
+      <a href="https://moskowitza.github.com/aaron">Contact</a>
+    </li>
+  </ul>
+</nav>
+  <!-- NAV -->
+  <!-- About and Game -->
+  <div class="row">
+    <!-- Info Card -->
+    <div class="col m6">
+      <div class="card-panel grey lighten-5 z-depth-1">
+        <div class="row valign-wrapper">
+          <div class="col s2">
+            <img src="images/face.png" alt="" class="circle responsive-img">
+            <!-- notice the "circle" class -->
+          </div>
+          <div class="col s10">
+            <span class="black-text">
+              Hello! I'm a Web Developer in Philadelphia! This is my face.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col m6">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="message" type="text" class="validate">
+            <label for="message">Message</label>
+          </div>
+        </div>
+        <button id="msg" class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+      </form>
+    </div>
+
+  </div>
+  <!-- Game Div -->
 
 
 
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support
+            and continue development on this project and is greatly appreciated.</p>
 
 
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li>
+              <a class="white-text" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 4</a>
+            </li>
           </ul>
-=======
-    <!-- YOUR NAME green box -->
-    <div>
-        <header>Aaron Moskowitz</header>
-        <nav>
-            <a href="index.html">about</a> | 
-            <a href="portfolio.html">portfolio</a> | 
-            <a href="contact.html">contact</a>
-        </nav>
-        <!-- Let's try the nav for the links -->
-
-
-        <!-- main area of the page with background image -->
-        <section>
-
-            <div id="aboutme">
-                <h1>Contact</h1>
-                <hr> Name
-                <br>
-                <input name="name" type="text">
-                <br> Email
-                <br>
-                <input name="email" type="text">
-                <br> Message
-                <br>
-                <textarea name="message" rows="10" cols="30"></textarea>
-                <br>
-                <button type="button">Submit</button>
-            </div>
-            <div id="connect">
-                <h2>Connect with Me</h2>
-                <hr>
-                <a href="https://github.com/Moskowitza">
-                    <img src="assets/images/git.png" alt="github logo">
-                </a>
-                <a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">
-                    <img src="assets/images/linkedin.png" alt="linkedin logo">
-                </a>
-                <a href="https://stackoverflow.com/users/9057152/aaronm?tab=profile">
-                    <img src="assets/images/stackoverflow.png" alt="stackoverflow logo">
-                </a>
-        </section>
-        <footer>
-            &#x24B8 copyright 2018 Aaron Moskowitz
-        </footer>
->>>>>>> c0296adf3a4588a7c3b69265429c55c6d69bdee9
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li>
+              <a class="white-text" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 4</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        Made by
+        <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
@@ -129,5 +171,6 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
-  </body>
+</body>
+
 </html>
