@@ -10,7 +10,14 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <script src="js/portfolio.js"></script>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/portfolio.js"></script>
+    <!-- LINK TO FIREBASE GOES HERE -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>s
 </head>
 
 <body>
@@ -19,7 +26,7 @@
     <div class="nav-wrapper">
       <a href="index.html" class="brand-logo show-on-medium-and-up hide-on-med-and-down">Aaron Moskowitz</a>
       <a href="#!" class="brand-logo show-on-small hide-on-med-and-up">Aaron M.</a>
-       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
         <i class="material-icons">menu</i>
       </a>
       <ul class="right hide-on-med-and-down">
@@ -38,10 +45,18 @@
       </ul>
     </div>
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">LinkedIn</a></li>
-        <li><a href="https://github.com/Moskowitza">Github</a></li>
-        <li><a href="https://moskowitza.github.io/portfolio.html">Portfolio</a></li>
-        <li><a href="https://moskowitza.github.io/contact.html">Contact</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://github.com/Moskowitza">Github</a>
+      </li>
+      <li>
+        <a href="https://moskowitza.github.io/portfolio.html">Portfolio</a>
+      </li>
+      <li>
+        <a href="https://moskowitza.github.io/contact.html">Contact</a>
+      </li>
     </ul>
   </nav>
   <!-- NAV -->
@@ -65,52 +80,57 @@
 
     <!-- form -->
     <div class="col s12 m4">
-      <form class="col s12" method="post" action="mailto:aaronmoskowitz@gmail.com">
+      <form id="contactForm" class="col s12" role="form">
         <div class="row">
           <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
+            <input id="first_name" type="text" class="formField validate">
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
+            <input id="last_name" type="text" class="formField validate">
             <label for="last_name">Last Name</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
+            <input id="email" type="email" class="formField validate">
             <label for="email">Email</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="message" type="text" class="validate">
+            <input id="message" type="text" class="formField validate">
             <label for="message">Message</label>
           </div>
         </div>
-        <button id="msg" class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <button id="msg" class="btn waves-effect waves-light modal-trigger" type="submit" data-target="modal1">Submit
           <i class="material-icons right">send</i>
         </button>
         </input>
       </form>
     </div>
-
+<!-- Modal -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Thank You</h4>
+      <p>Thank you for contacting me. I'll email you back shortly. You can always contact me on linkedIn or send me an email at aaronmoskowitz@gmail.com.</p>
+    </div>
+    <div class="modal-footer">
+      <a id="modalBtn" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"  type="reset">Agree</a>
+    </div>
   </div>
-  <!-- Game Div -->
+  </div>
+
 
 
 
   <!-- Footer -->
   <footer class="page-footer orange">
-    
+
   </footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/portfolio.js"></script>
+
 
 </body>
 
