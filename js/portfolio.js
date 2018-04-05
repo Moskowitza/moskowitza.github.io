@@ -70,7 +70,7 @@ $(document).ready(function () {
 
   //clear form
   $("#modalBtn").on('click', function () {
-    $('form').find('input:text, input:password, select, textarea').val('');
+    $('form').find('input:text, input:email, input:password, select, textarea').val('');
     $('form').find('input:radio, input:checkbox').prop('checked', false);
   });
 });
