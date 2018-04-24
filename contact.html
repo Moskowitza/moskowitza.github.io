@@ -11,25 +11,41 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/portfolio.js"></script>
-    <!-- LINK TO FIREBASE GOES HERE -->
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/portfolio.js"></script>
+  <!-- LINK TO FIREBASE GOES HERE -->
   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 </head>
 
 <body>
   <!-- NAV -->
-  <nav>
-    <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo show-on-medium-and-up hide-on-med-and-down">Aaron Moskowitz</a>
-      <a href="#!" class="brand-logo show-on-small hide-on-med-and-up">Aaron M.</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-        <i class="material-icons">menu</i>
-      </a>
-      <ul class="right hide-on-med-and-down">
+  <header>
+    <nav class="blue lighten-4">
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo show-on-medium-and-up hide-on-med-and-down"> Aaron Moskowitz</a>
+        <a href="index.html" class="brand-logo show-on-small hide-on-med-and-up">Aaron M.</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://github.com/Moskowitza">Github</a>
+          </li>
+          <li>
+            <a href="https://moskowitza.github.io/portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="https://moskowitza.github.io/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
         <li>
           <a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">LinkedIn</a>
         </li>
@@ -43,24 +59,10 @@
           <a href="https://moskowitza.github.io/contact.html">Contact</a>
         </li>
       </ul>
-    </div>
-    <ul class="sidenav" id="mobile-demo">
-      <li>
-        <a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">LinkedIn</a>
-      </li>
-      <li>
-        <a href="https://github.com/Moskowitza">Github</a>
-      </li>
-      <li>
-        <a href="https://moskowitza.github.io/portfolio.html">Portfolio</a>
-      </li>
-      <li>
-        <a href="https://moskowitza.github.io/contact.html">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- NAV -->
+    </nav>
+  </header>
   <!-- Contact Card and Form -->
+  <main>
   <div class="container row">
     <!-- Contact Card -->
     <div class="col s12 m6">
@@ -70,7 +72,7 @@
           <span class="card-title">Contact Me</span>
         </div>
         <div class="card-content">
-          <p>This is one of several Dragon Sculptures along Arch St in Chinatown section of Philadelphia.</p>
+          <p>This is one of several Ward Eliker's dragon sculptures on Arch St welcoming visitors to Philadelphia's Chinatown.</p>
         </div>
         <div class="card-action">
           <a href="https://www.linkedin.com/in/aaron-moskowitz-0970751/">linkedIn</a>
@@ -109,28 +111,23 @@
         </input>
       </form>
     </div>
-<!-- Modal -->
-<div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Thank You</h4>
-      <p>Thank you for contacting me. I'll email you back shortly. You can always contact me on linkedIn or send me an email at aaronmoskowitz@gmail.com.</p>
-    </div>
-    <div class="modal-footer">
-      <a id="modalBtn" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"  type="reset">Agree</a>
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Thank You</h4>
+        <p>Thank you for contacting me. I'll email you back shortly. You can always contact me on linkedIn or send me an email
+          at aaronmoskowitz@gmail.com.</p>
+      </div>
+      <div class="modal-footer">
+        <a id="modalBtn" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" type="reset">Agree</a>
+      </div>
     </div>
   </div>
-  </div>
-
-
-
-
+</main>
   <!-- Footer -->
-  <footer class="page-footer orange">
-
-  </footer>
-
-
-
+  <footer class="footer page-footer blue lighten-4">
+      <div class="container"></div>
+    </footer>
 
 </body>
 
