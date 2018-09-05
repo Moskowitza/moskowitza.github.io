@@ -6,12 +6,12 @@ $(document).ready(function () {
 
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBYnmslHGxsQBYC3BXHOFTFQyYSfUUXg8o",
-    authDomain: "contactform-50a6b.firebaseapp.com",
-    databaseURL: "https://contactform-50a6b.firebaseio.com",
-    projectId: "contactform-50a6b",
-    storageBucket: "contactform-50a6b.appspot.com",
-    messagingSenderId: "882086674179"
+    apiKey: "AIzaSyCR-_9cNtVI6krIkrImq3CNpgLCSoEU-N8",
+    authDomain: "moskowitza-contact.firebaseapp.com",
+    databaseURL: "https://moskowitza-contact.firebaseio.com",
+    projectId: "moskowitza-contact",
+    storageBucket: "moskowitza-contact.appspot.com",
+    messagingSenderId: "735755413395"
   };
   firebase.initializeApp(config);
 
