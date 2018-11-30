@@ -1,4 +1,4 @@
-data = {
+const data = {
   proj1: {
     title: "Animal Sanctuaries",
     desc:
@@ -17,7 +17,7 @@ data = {
   proj3: {
     title: "Lost Memory",
     desc: "React Memory Game",
-    img: "lego.jpg",
+    img: "lost.jpg",
     url: "https://moskowitza.github.io/clickyreact/",
     tech: ["React", "Yarn"]
   },
@@ -34,39 +34,35 @@ data = {
     img: "lego.jpg",
     url: "https://mighty-dawn-76073.herokuapp.com/",
     tech: ["Express", "MongoDB", "Heroku"]
-  },
-  proj6: {
-    title: "Mongo Notes",
-    desc: "Note taker using MongoDB",
-    img: "lego.jpg",
-    url: "https://boiling-garden-17259.herokuapp.com/",
-    tech: ["Express", "MongoDB", "Heroku"]
   }
+  // proj6: {
+  //   title: "Mongo Notes",
+  //   desc: "Note taker using MongoDB",
+  //   img: "lego.jpg",
+  //   url: "github.com/moskowitza",
+  //   tech: ["Express", "MongoDB", "Heroku"]
+  // }
 };
-var projects = document.querySelector(".projects");
+const projects = document.querySelector(".projects");
 
-for (const proj in data) {
-  if (data.hasOwnProperty(proj)) {
-    // console.log(proj + " -> " + JSON.stringify(data[proj]));
+const theseProjects = Object.values(data);
+console.log(theseProjects);
+theseProjects.forEach(proj => {
+  let newProject = document.createElement("div");
 
-    const newProject = document.createElement("div");
-
-    const techList = data[proj].tech;
-    console.log(techList);
-    newProject.innerHTML = `
+  newProject.innerHTML = `
     <div class="project">
       <img class="project__img" 
-      src="../images/${data[proj].img ? data[proj].img : "alien.jpg"}">
+      src="../images/${proj.img ? proj.img : "alien.jpg"}">
       <div class="project__details">
-        <h2>${data[proj].title}</h2>
-        <a href="${data[proj].url}">link</a>
-        <p class="project__desc"> ${data[proj].desc}</p>
+        <h2>${proj.title}</h2>
+        <a href="${proj.url}">link</a>
+        <p class="project__desc"> ${proj.desc}</p>
         <ul>
-          ${techList.map(e => `<li>${e}</li>`).join("")}
+          ${proj.tech.map(e => `<li>${e}</li>`).join("")}
         </ul>
       </div>
     </div>
        `;
-    projects.appendChild(newProject);
-  }
-}
+  projects.appendChild(newProject);
+});
