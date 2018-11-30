@@ -3,14 +3,14 @@ data = {
     title: "Animal Sanctuaries",
     desc:
       "An application for finding and keeping in touch with Animal Sanctuaries.",
-    img: "lego.jpg",
+    img: "cow.jpg",
     url: "https://farmsanctuaries.herokuapp.com/",
     tech: ["React", "MySQL", "Heroku"]
   },
   proj2: {
     title: "Philly Neighbors",
     desc: "A community Bulletin Board",
-    img: "lego.jpg",
+    img: "dragons.jpg",
     url: "https://stormy-temple-91988.herokuapp.com/",
     tech: ["Sequelize", "MERN", "Handlebars"]
   },
@@ -24,7 +24,7 @@ data = {
   proj4: {
     title: "Halloween Hangman",
     desc: "Simple javascript game",
-    img: "lego.jpg",
+    img: "voodoo.jpg",
     url: "https://moskowitza.github.io/Hangman-Game/",
     tech: ["Bootstrap", "Javascript"]
   },
