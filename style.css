@@ -37,8 +37,14 @@ nav ul {
 }
 nav ul li {
   padding: 1rem;
-  box-sizing: border-box;
   size: 0.8rem;
+  color: lightgrey;
+}
+nav li:hover {
+  background-color: lightgrey;
+  color: rgb(16, 16, 16);
+  border-radius: 3px;
+  /* size:2rem; */
 }
 a {
   box-sizing: border-box;
