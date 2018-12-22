@@ -34,6 +34,13 @@ const data = {
     img: "lego.jpg",
     url: "https://mighty-dawn-76073.herokuapp.com/",
     tech: ["Express", "MongoDB", "Heroku"]
+  },
+  proj6: {
+    title: "Trips To Plan",
+    desc: "Plot eventful responses to a Map",
+    img: "ttplogo.png",
+    url: " https://moskowitza.github.io/tripstoplan/",
+    tech: ["GoogleMaps", "External API", "LocalStroage"]
   }
   // proj6: {
   //   title: "Mongo Notes",
