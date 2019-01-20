@@ -41,14 +41,14 @@ const data = {
     img: "ttplogo.png",
     url: " https://moskowitza.github.io/tripstoplan/",
     tech: ["GoogleMaps", "External API", "LocalStroage"]
+  },
+  proj7: {
+    title: "Circuit Picker",
+    desc: "Create and run a climbing circuit",
+    img: "climb.jpg",
+    url: "https://circuit-picker.herokuapp.com/",
+    tech: ["React", "Firebase", "Heroku"]
   }
-  // proj6: {
-  //   title: "Mongo Notes",
-  //   desc: "Note taker using MongoDB",
-  //   img: "lego.jpg",
-  //   url: "github.com/moskowitza",
-  //   tech: ["Express", "MongoDB", "Heroku"]
-  // }
 };
 const projects = document.querySelector(".projects");
 
