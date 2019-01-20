@@ -36,7 +36,6 @@ nav ul {
   list-style-type: none;
 }
 nav ul li {
-  padding: 1rem;
   size: 0.8rem;
   color: lightgrey;
 }
@@ -44,13 +43,14 @@ nav li:hover {
   background-color: lightgrey;
   color: rgb(16, 16, 16);
   border-radius: 3px;
-  /* size:2rem; */
 }
 a {
   box-sizing: border-box;
   text-decoration: none;
   color: white;
   font-weight: bold;
+  display: block;
+  padding: 1rem;
 }
 a:hover {
   color: lightyellow;
@@ -60,6 +60,8 @@ main {
   display: flex;
   flex-direction: column;
   margin: 2rem;
+  max-width: 800px;
+  min-width: 450px;
 }
 .panel {
   width: 20rem;
