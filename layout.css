@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper-flex-column {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#logo {
+  background: lightgoldenrodyellow;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 60px;
+  padding: 20px;
+  width: 100%;
+  text-shadow: -3px 2px 8px pink, 4px 4px 8px yellow, 1px 10px 8px lightblue;
+}
+#nav-container {
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+.nav-items-ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  color: lightgrey;
+}
+.nav-item-li {
+  color: lightgrey;
+  border-radius: 3px;
+
+  margin: 10px;
+}
+.nav-item-li:hover {
+  background-color: lightgrey;
+  color: rgb(16, 16, 16);
+  border-radius: 3px;
+}
+.nav-item-a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+}
+.nav-item-a:hover {
+  text-decoration: none;
+  color: rgb(16, 16, 16);
+  font-weight: bold;
+  display: block;
+}
+
+.panel {
+  max-width: 300px;
+  padding: 30px;
+  padding-bottom: 200px;
+}
+.panel h2 {
+  border-bottom: 5px solid rgb(91, 28, 28);
+}
+.panel p {
+}
+
+.footer {
+  background: lightgoldenrodyellow;
+  border-top: 2px solid rgb(91, 28, 28);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media (min-width: 600px) {
+  #logo {
+    font-size: 80px;
+  }
+  .nav-items-ul {
+    justify-content: flex-start;
+  }
+}
+#main {
+  -webkit-flex: 1 1 auto;
+  overflow-y: auto;
+  height: 0px;
+}
+.projects {
+  justify-content: center;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.project {
+  width: 370px;
+  height: 170px;
+  margin: 10px;
+  padding: 5px;
+  background: rgb(172, 174, 126);
+  font-weight: 100;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 150px 2fr;
+  grid-gap: 10px;
+  align-items: center;
+  border-radius: 3px;
+}
+.project__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+}
+
+.project__details ul {
+  list-style: none;
+  display: inline-block;
+}
+.project__details li {
+  padding: 0 1px 0 0;
+  display: inline-block;
+}
