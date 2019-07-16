@@ -1,42 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Aaron Moskowitz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
-
   <body>
-    <div class="wrapper-flex-column">
-      <header>
-        <div id="logo">Aaron Moskowitz</div>
-        <nav id="nav-container">
-          <ul class="nav-items-ul">
-            <li class="nav-item-li"><a class="nav-item-a" href="#">Home</a></li>
-            <li class="nav-item-li">
-              <a class="nav-item-a" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item-li">
-              <a class="nav-item-a" href="port/portfolio.html">Portfolio</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <div id="main">
-        <div class="panel">
-          <h2>Welcome</h2>
-          <p>
-            Hello and thank you for visiting my github.io page. I'm a full-stack
-            developer making the most out of JavaScript. I love learning new
-            tips and tricks. Follow me on github if you're interested in seeing
-            what I'm learning today.
-          </p>
-        </div>
+    <header>
+      <div class="marquee">
+        <h1 class="marquee-text">moskowitza@github</h1>
       </div>
-      <footer class="footer">&copy; Aaron Moskowitz</footer>
-    </div>
+    </header>
+    <main>
+      <section id="about" class="main-section">
+        <img src="./assets/myFace.svg" class="about-img" />
+        <p class="about-text">
+          Welcome to my github page. I'm a fullstack dev with expertise in
+          Javascript React and Node. I built my first HTML site in back in the
+          90's and worked on many sites and apps over my career, and coding
+          professionally since 2018.
+        </p>
+      </section>
+      <section id="content" class="projects-section">
+        <ul class="projects-list">
+          <h2>Project Code</h2>
+
+          <li class="projects-list--item">
+            <h3 class="projects-list--head">
+              MERN Example Project: React, Node, Express, Sequelize, Passport:
+            </h3>
+            <p class="projects-list--text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+              ipsum dolorem, inventore doloremque repudiandae recusandae? Nobis
+              debitis dolor laudantium quod.
+              <a href="https://github.com/Moskowitza/animalSanctuaries">MERN</a>
+            </p>
+          </li>
+          <li class="projects-list--item">
+            <h3 class="projects-list--head">TypeScript Crash Course:</h3>
+            <p class="projects-list--text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+              ipsum dolorem, inventore doloremque repudiandae recusandae? Nobis
+              debitis dolor laudantium quod.
+              <a href="https://github.com/Moskowitza/typeScript">TypeScript</a>
+            </p>
+          </li>
+          <li class="projects-list--item">
+            <h3 class="projects-list--head">Firebase Crash Course:</h3>
+            <p class="projects-list--text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+              ipsum dolorem, inventore doloremque repudiandae recusandae? Nobis
+              debitis dolor laudantium quod.
+              <a href="https://github.com/Moskowitza/firebaseWithAuth"
+                >Firebase</a
+              >
+            </p>
+          </li>
+          <li class="projects-list--item">
+            <h3 class="projects-list--head">Algorithms and Data-Structures:</h3>
+            <p class="projects-list--text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+              ipsum dolorem, inventore doloremque repudiandae recusandae? Nobis
+              debitis dolor laudantium quod.
+              <a href="https://github.com/Moskowitza/linkedList">Algorithms</a>
+            </p>
+          </li>
+          <li class="projects-list--item">
+            <h3 class="projects-list--head">Data Vis with D3:</h3>
+            <p class="projects-list--text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+              ipsum dolorem, inventore doloremque repudiandae recusandae? Nobis
+              debitis dolor laudantium quod.
+              <a href="https://github.com/Moskowitza/d3inDepth">D3 Examples</a>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="https://www.linkedin.com/in/moskowitzaaron/">
+        <img class="icon" src="./assets/linkedin-in-brands.svg"
+      /></a>
+    </footer>
   </body>
 </html>
